@@ -2,5 +2,13 @@ package interfaceTest;
 
 public interface Payment {
 
-	void addVoucher();
+	void getAppName();
+	
+	static void generateReceipt() {
+		System.out.println("genreated");
+	}
+
+	default void addVoucher() {
+		System.out.println("5rs");
+	}
 }
